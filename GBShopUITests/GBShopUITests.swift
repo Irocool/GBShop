@@ -2,7 +2,7 @@
 //  GBShopUITests.swift
 //  GBShopUITests
 //
-//  Created by Пользователь on 20.06.2021.
+//  Created by Пользователь on 21.06.2021.
 //
 
 import XCTest
