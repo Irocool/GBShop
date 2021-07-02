@@ -127,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				5959B40626820078007ECD74 /* Environments */,
 				5959B40526820065007ECD74 /* Resources */,
 				5959B4042682003D007ECD74 /* BusinessLogic */,
@@ -135,6 +136,10 @@
 				3834771626835FBE007A1CCC /* Environments */,
 				3834771826835FBE007A1CCC /* Resources */,
 >>>>>>> origin/feature/hw1
+=======
+				5959B3F6267FEE7C007ECD74 /* Environments */,
+				5959B3F5267FEE26007ECD74 /* Resources */,
+>>>>>>> parent of 2ab52e6... modified LaunchScreen
 				5959B3F4267FEDED007ECD74 /* Core */,
 				5959B3EF267FED48007ECD74 /* App */,
 			);
@@ -167,16 +172,47 @@
 				5959B3F3267FEDD6007ECD74 /* Flows */,
 				5959B3F2267FEDBA007ECD74 /* Assembly */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				3834771F26835FE3007A1CCC /* Entity */,
 				3834772026835FFA007A1CCC /* BusinessLogic */,
 >>>>>>> origin/feature/hw1
+=======
+				5959B3F1267FED9B007ECD74 /* Entity */,
+				5959B3F0267FED73007ECD74 /* BusinessLogic */,
+>>>>>>> parent of 2ab52e6... modified LaunchScreen
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		5959B3F2267FEDBA007ECD74 /* Assembly */ = {
 <<<<<<< HEAD
+=======
+		5959B3F0267FED73007ECD74 /* BusinessLogic */ = {
+>>>>>>> parent of 2ab52e6... modified LaunchScreen
+			isa = PBXGroup;
+			children = (
+			);
+			name = BusinessLogic;
+			path = "../New Group/BusinessLogic";
+			sourceTree = "<group>";
+		};
+		5959B3F1267FED9B007ECD74 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+<<<<<<< HEAD
+		5959B3F4267FEDED007ECD74 /* Core */ = {
+=======
+>>>>>>> origin/feature/hw1
+=======
+		5959B3F2267FEDBA007ECD74 /* Assembly */ = {
+>>>>>>> parent of 2ab52e6... modified LaunchScreen
 			isa = PBXGroup;
 			children = (
 			);
@@ -191,44 +227,34 @@
 			sourceTree = "<group>";
 		};
 		5959B3F4267FEDED007ECD74 /* Core */ = {
-=======
->>>>>>> origin/feature/hw1
 			isa = PBXGroup;
 			children = (
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		5959B40326820000007ECD74 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		5959B4042682003D007ECD74 /* BusinessLogic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BusinessLogic;
-			sourceTree = "<group>";
-		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		5959B40526820065007ECD74 /* Resources */ = {
+=======
+		5959B3F5267FEE26007ECD74 /* Resources */ = {
+>>>>>>> parent of 2ab52e6... modified LaunchScreen
 			isa = PBXGroup;
 			children = (
 				5959B3C4267FEB90007ECD74 /* LaunchScreen.storyboard */,
 				5959B3C2267FEB8F007ECD74 /* Assets.xcassets */,
 			);
-			path = Resources;
+			name = Resources;
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
-		5959B40626820078007ECD74 /* Environments */ = {
+		5959B3F6267FEE7C007ECD74 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
 				5959B3C7267FEB90007ECD74 /* Info.plist */,
 			);
-			path = Environments;
+			name = Environments;
+			path = "New Group2";
 			sourceTree = "<group>";
 		};
 =======
