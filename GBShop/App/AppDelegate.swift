@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  GBShop
 //
-//  Created by Пользователь on 21.06.2021.
+//  Created by Irina Kuligina on 21.06.2021.
 //
 
 import UIKit
@@ -10,13 +10,31 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    let requestFactory = RequestFactory ()
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
-
+    
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = ViewController ()
+        window.makeKeyAndVisible()
+        self.window = window
+    
+   
+        let auth = requestFactory.makeAuthRequestFatory()
+        auth.login(userName: "Somebody", password: "mypassword") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+            return true
+            
+        }
+        
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -32,5 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+        }
+
+
 
