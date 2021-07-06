@@ -16,6 +16,7 @@
 		59033E3E26904E7F00CDD81B /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59033E3D26904E7F00CDD81B /* AuthRequestFactory.swift */; };
 		59033E4326904EE800CDD81B /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59033E4226904EE800CDD81B /* Auth.swift */; };
 		59033E4826904F5900CDD81B /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59033E4726904F5900CDD81B /* RequestFactory.swift */; };
+		5944355A2694E61E00938365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594435592694E61E00938365 /* ViewController.swift */; };
 		594D956F2692416500FAE610 /* Pods_GBShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B63B98EF97BE3B8D3D5727 /* Pods_GBShop.framework */; };
 		594D95702692416500FAE610 /* Pods_GBShop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08B63B98EF97BE3B8D3D5727 /* Pods_GBShop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5959B3BA267FEB77007ECD74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959B3B9267FEB77007ECD74 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		59033E3D26904E7F00CDD81B /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		59033E4226904EE800CDD81B /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		59033E4726904F5900CDD81B /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		594435592694E61E00938365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5959B3B6267FEB77007ECD74 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5959B3B9267FEB77007ECD74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5959B3BB267FEB77007ECD74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				3834771826835FBE007A1CCC /* Resources */,
 				5959B3F4267FEDED007ECD74 /* Core */,
 				5959B3EF267FED48007ECD74 /* App */,
+				594435592694E61E00938365 /* ViewController.swift */,
 			);
 			path = GBShop;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				59033E1D26904AAA00CDD81B /* RequestRouter.swift in Sources */,
 				59033E2726904D8600CDD81B /* LoginResult.swift in Sources */,
 				59033E4326904EE800CDD81B /* Auth.swift in Sources */,
+				5944355A2694E61E00938365 /* ViewController.swift in Sources */,
 				59033E2C26904DB700CDD81B /* User.swift in Sources */,
 				5959B3BA267FEB77007ECD74 /* AppDelegate.swift in Sources */,
 				5959B3BC267FEB77007ECD74 /* SceneDelegate.swift in Sources */,
