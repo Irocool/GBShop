@@ -5,34 +5,9 @@
 //  Created by Irina Kuligina on 03.07.2021.
 //
 
-import Foundation
 import UIKit
 import Alamofire
 
-//protocol AbstractRequestFactory {
-//    var errorParser: AbstractErrorParser { get }
-//    var sessionManager: SessionManager { get }
-//    var queue: DispatchQueue { get }
-//
-//    @discardableResult
-//    func request<T: Decodable>(
-//        request: URLRequestConvertible,
-//        completionHandler: @escaping (AFDataResponse <T> ) -> Void)
-//        -> DataRequest
-//}
-//
-//extension AbstractRequestFactory {
-//
-//    @discardableResult
-//    public func request<T: Decodable>(
-//        request: URLRequestConvertible,
-//        completionHandler: @escaping (AFDataResponse<T>) -> Void)
-//        -> DataRequest {
-//            return sessionManager
-//                .request(request)
-//                .responseCodable(errorParser: errorParser, queue: queue, completionHandler: completionHandler)
-//    }
-//}
 
 class CustomDecodableSerializer<T: Decodable>: DataResponseSerializerProtocol {
     private let errorParser: AbstractErrorParser

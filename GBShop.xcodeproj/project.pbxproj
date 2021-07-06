@@ -17,6 +17,9 @@
 		59033E4326904EE800CDD81B /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59033E4226904EE800CDD81B /* Auth.swift */; };
 		59033E4826904F5900CDD81B /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59033E4726904F5900CDD81B /* RequestFactory.swift */; };
 		5944355A2694E61E00938365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594435592694E61E00938365 /* ViewController.swift */; };
+		594435642694F05200938365 /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594435632694F05200938365 /* LogoutResult.swift */; };
+		594435682694F08100938365 /* SignUpResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594435672694F08100938365 /* SignUpResult.swift */; };
+		5944356C2694F0A300938365 /* UpdateUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5944356B2694F0A300938365 /* UpdateUserDataResult.swift */; };
 		594D956F2692416500FAE610 /* Pods_GBShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B63B98EF97BE3B8D3D5727 /* Pods_GBShop.framework */; };
 		594D95702692416500FAE610 /* Pods_GBShop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08B63B98EF97BE3B8D3D5727 /* Pods_GBShop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5959B3BA267FEB77007ECD74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959B3B9267FEB77007ECD74 /* AppDelegate.swift */; };
@@ -77,6 +80,9 @@
 		59033E4226904EE800CDD81B /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		59033E4726904F5900CDD81B /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		594435592694E61E00938365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		594435632694F05200938365 /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		594435672694F08100938365 /* SignUpResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResult.swift; sourceTree = "<group>"; };
+		5944356B2694F0A300938365 /* UpdateUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserDataResult.swift; sourceTree = "<group>"; };
 		5959B3B6267FEB77007ECD74 /* GBShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5959B3B9267FEB77007ECD74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5959B3BB267FEB77007ECD74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +152,9 @@
 			children = (
 				59033E2626904D8600CDD81B /* LoginResult.swift */,
 				59033E2B26904DB700CDD81B /* User.swift */,
+				594435632694F05200938365 /* LogoutResult.swift */,
+				594435672694F08100938365 /* SignUpResult.swift */,
+				5944356B2694F0A300938365 /* UpdateUserDataResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -528,8 +537,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5944356C2694F0A300938365 /* UpdateUserDataResult.swift in Sources */,
 				59033E4826904F5900CDD81B /* RequestFactory.swift in Sources */,
+				594435682694F08100938365 /* SignUpResult.swift in Sources */,
 				59033E2226904BB900CDD81B /* DataRequest.swift in Sources */,
+				594435642694F05200938365 /* LogoutResult.swift in Sources */,
 				599D9584268FBB2600254803 /* AbstractRequestFactory.swift in Sources */,
 				59033E3E26904E7F00CDD81B /* AuthRequestFactory.swift in Sources */,
 				599D9577268FB56900254803 /* AbstractErrorParser.swift in Sources */,

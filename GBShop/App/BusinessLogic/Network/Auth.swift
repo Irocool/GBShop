@@ -29,7 +29,22 @@ extension Auth: AuthRequestFactory {
     func login(userName: String, password: String, completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void) {
         let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
         self.request (request: requestModel, completionHandler: completionHandler)
-    }
+        }
+        
+        func logout(userID: Int, completionHandler: @escaping (AFDataResponse<LogoutResult>) -> Void) {
+            let requestModel = Logout(baseUrl: baseUrl, userID: userID)
+            self.request(request: requestModel, completionHandler: completionHandler)
+        }
+        
+        func signUp(userData: UserData, completionHandler: @escaping (AFDataResponse<SignUpResult>) -> Void) {
+            let requestModel = SignUp(baseUrl: baseUrl, userData: userData)
+            self.request(request: requestModel, completionHandler: completionHandler)
+        }
+        
+        func updateUserData(userData: UserData, completionHandler: @escaping (AFDataResponse<UpdateUserDataResult>) -> Void) {
+            let requestModel = UpdateUserData(baseUrl: baseUrl, userData: userData)
+            self.request(request: requestModel, completionHandler: completionHandler)
+        }
 }
 
 extension Auth {
@@ -44,6 +59,53 @@ extension Auth {
             return [
                 "username": login,
                 "password": password
+            ]
+        }
+    }
+    
+    struct Logout: RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .post
+        let path: String = "signout"
+        
+        let userID: Int
+        var parameters: Parameters? {
+            return [
+                "user_id": userID,
+            ]
+        }
+    }
+    
+    struct SignUp: RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .post
+        let path: String = "register"
+        
+        let userData: UserData
+        var parameters: Parameters? {
+            return [
+                "id_user": userData.id,
+                "username": userData.username,
+                "password": userData.password,
+                "email": userData.email,
+
+            ]
+        }
+    }
+    
+    struct UpdateUserData: RequestRouter {
+        let baseUrl: URL
+        let method: HTTPMethod = .put
+        let path: String = "updateUserData"
+        
+        let userData: UserData
+        var parameters: Parameters? {
+            return [
+                "id_user": userData.id,
+                "username": userData.username,
+                "password": userData.password,
+                "email": userData.email,
+
             ]
         }
     }
