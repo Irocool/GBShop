@@ -26,6 +26,7 @@
 		5959B3BC267FEB77007ECD74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959B3BB267FEB77007ECD74 /* SceneDelegate.swift */; };
 		5959B3D1267FEB91007ECD74 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959B3D0267FEB91007ECD74 /* GBShopTests.swift */; };
 		5959B3DC267FEB91007ECD74 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959B3DB267FEB91007ECD74 /* GBShopUITests.swift */; };
+		59658866269A354100E4B36F /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59658865269A354100E4B36F /* ResponseCodableTests.swift */; };
 		599D9577268FB56900254803 /* AbstractErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D9576268FB56900254803 /* AbstractErrorParser.swift */; };
 		599D957F268FB65B00254803 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D957E268FB65B00254803 /* ErrorParser.swift */; };
 		599D9584268FBB2600254803 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D9583268FBB2600254803 /* AbstractRequestFactory.swift */; };
@@ -92,6 +93,10 @@
 		5959B3D7267FEB91007ECD74 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5959B3DB267FEB91007ECD74 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		5959B3DD267FEB91007ECD74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59658865269A354100E4B36F /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		598C817A26C0428900F92B42 /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		598C817D26C044B000F92B42 /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		598C817E26C0452E00F92B42 /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 		599D9576268FB56900254803 /* AbstractErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractErrorParser.swift; sourceTree = "<group>"; };
 		599D957E268FB65B00254803 /* ErrorParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		599D9583268FBB2600254803 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
@@ -202,6 +207,7 @@
 		5959B3B8267FEB77007ECD74 /* GBShop */ = {
 			isa = PBXGroup;
 			children = (
+				598C817826C0400200F92B42 /* TestPlanes */,
 				3834771626835FBE007A1CCC /* Environments */,
 				3834771826835FBE007A1CCC /* Resources */,
 				5959B3F4267FEDED007ECD74 /* Core */,
@@ -214,6 +220,7 @@
 		5959B3CF267FEB91007ECD74 /* GBShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				59658865269A354100E4B36F /* ResponseCodableTests.swift */,
 				5959B3D0267FEB91007ECD74 /* GBShopTests.swift */,
 				5959B3D2267FEB91007ECD74 /* Info.plist */,
 			);
@@ -262,6 +269,16 @@
 				599D9575268FB4DE00254803 /* Network */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		598C817826C0400200F92B42 /* TestPlanes */ = {
+			isa = PBXGroup;
+			children = (
+				598C817A26C0428900F92B42 /* AllTests.xctestplan */,
+				598C817D26C044B000F92B42 /* UnitTests.xctestplan */,
+				598C817E26C0452E00F92B42 /* UITests.xctestplan */,
+			);
+			path = TestPlanes;
 			sourceTree = "<group>";
 		};
 		599D9575268FB4DE00254803 /* Network */ = {
@@ -561,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5959B3D1267FEB91007ECD74 /* GBShopTests.swift in Sources */,
+				59658866269A354100E4B36F /* ResponseCodableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
